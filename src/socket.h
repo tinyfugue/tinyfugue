@@ -21,7 +21,7 @@
 #define CONN_BG		0x08
 #define CONN_FG		0x10
 
-struct World   *world_decl;	/* declares struct World */
+struct World;	/* declares struct World */
 
 extern String *incoming_text;
 extern int quit_flag;
