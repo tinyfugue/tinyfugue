@@ -591,13 +591,13 @@ fi
 dnl The "right" way of using program_transform_name, program_prefix, and
 dnl program_suffix expects you to use AC_ARG_PROGRAM here and do transformation
 dnl in the Makefile, but we want the values now, so we do it ourselves.
-EXENAME="tf" PROGNAME="tf"
+EXENAME="tf"
 test "${program_prefix}" != "NONE" && EXENAME="${program_prefix}${EXENAME}"
 test "${program_suffix}" != "NONE" && EXENAME="${EXENAME}${program_suffix}"
 if test "${program_transform_name}" != "NONE"; then
     EXENAME=`echo "${EXENAME}" | sed "${program_transform_name}"`
 fi
-LIBNAME="${PROGNAME}-lib"
+LIBNAME="${EXENAME}-lib"
 
 if test "$enable_symlink" = "no"; then
     SYMLINK=""
@@ -608,7 +608,6 @@ else
 fi
 
 AC_SUBST(EXENAME)
-AC_SUBST(PROGNAME)
 AC_SUBST(LIBNAME)
 AC_SUBST(SYMLINK)
 
