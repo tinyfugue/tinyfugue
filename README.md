@@ -7,7 +7,7 @@ TinyFugue is a text-based, line-based client designed for connecting to most fla
 - OpenSSL development libraries
 
 ## Build Instructions
-It's your standard download/configure/`make`/`make install` routine. Regarding configure options, this is what I recommend (YMMV, obviously):
+It's your standard download/`configure`/`make`/`make install` routine. Regarding configure options, this is what I recommend (YMMV, obviously):
 
 ```
 ./configure \
