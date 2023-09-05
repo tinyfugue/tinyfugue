@@ -11,6 +11,8 @@ It's your standard download/`configure`/`make`/`make install` routine. Regarding
 
 ```
 ./configure \
+        --enable-inet6 \
+        --enable-ssl \
         --enable-atcp \
         --enable-gmcp \
         --enable-option102
